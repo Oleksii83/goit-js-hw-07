@@ -9,9 +9,6 @@ function onInputFocus() {
 }
 input.addEventListener('blur', onInputBlur);
 function onInputBlur() {
-  //   if (input.value === '') {
-  //     span.textContent = 'незнакомец';
-  //   }
   console.log('NoFocus');
 }
 input.addEventListener('input', onInputChange);

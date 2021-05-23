@@ -3,7 +3,9 @@ const input = document.querySelector('#validation-input');
 input.addEventListener('blur', onInputBlur);
 function onInputBlur() {
   if (input.value.length > 6) {
-    span.textContent = 'незнакомец';
+    input.style.
+  } else {
   }
+
   console.log('NoFocus');
 }
