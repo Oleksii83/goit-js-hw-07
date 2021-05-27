@@ -14,15 +14,12 @@ const images = [
 ];
 
 const imageEl = document.querySelector('#gallery');
+let line = '';
 
 const imagePars = images.forEach(elem => {
-  //   const createEl = document.createElement('li');
-  imageEl.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img src = '${elem.url}' alt = '${elem.alt}' width = '360' height = '320'> </li>`,
-  );
-  imageEl.setAttribute('style', 'list-style: none');
-  imageEl.setAttribute('style', 'display: flex;');
-
-  console.log(imageEl);
+  line += `<li><img src = '${elem.url}' alt = '${elem.alt}' width = '360' height = '320'> </li>`;
 });
+imageEl.insertAdjacentHTML('afterbegin', line);
+imageEl.setAttribute('style', 'display: flex;');
+
+console.log(imageEl);

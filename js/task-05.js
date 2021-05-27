@@ -14,8 +14,7 @@ function onInputBlur() {
 input.addEventListener('input', onInputChange);
 function onInputChange(event) {
   console.log(event.currentTarget.value);
-  span.textContent = event.currentTarget.value;
+  event.textContent = event.currentTarget.value || 'незнакомец';
   if (input.value === '') {
-    span.textContent = 'незнакомец';
   }
 }
